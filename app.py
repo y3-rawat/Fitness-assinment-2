@@ -19,7 +19,7 @@ b = {'Cottage cheese with berries and nuts for breakfast, Chicken and quinoa sal
                'Smoothie with spinach, banana, and protein powder for breakfast, Quinoa salad with chickpeas for lunch, Grilled fish with asparagus for dinner, Cottage cheese with pineapple for snacks':9,
                       'Oatmeal with almond milk and berries for breakfast, Turkey and avocado wrap for lunch, Grilled salmon with asparagus for dinner, Apple slices with almond butter for snacks':0}
 app = Flask(__name__)
-pipe = pickle.load(open(r'model\pipe.pkl','rb'))
+pipe = pickle.load(open('model\pipe.pkl','rb'))
 @app.route('/')
 def index():
     return render_template('form.html')
