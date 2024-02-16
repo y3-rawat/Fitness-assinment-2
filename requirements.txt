@@ -24,7 +24,7 @@ websocket-client==1.7.0
 websockets==11.0.3
 functools
 
-pickle
+
 numpy
 
 gunicorn
